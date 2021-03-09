@@ -1,0 +1,8 @@
+2. Recupere os dados de todos os competidores que ganharam alguma competição.
+
+Consulta:
+
+use mydb;
+SELECT *
+FROM Competidor
+WHERE Posicao = ALL (SELECT Posicao FROM Competidor WHERE Posicao = 1);

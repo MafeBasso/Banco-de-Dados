@@ -1,0 +1,8 @@
+1. Encontre todos os pagamentos que foram destinados a prêmios.
+
+Consulta:
+
+use mydb;
+SELECT *
+FROM pagamento
+WHERE descricao LIKE '%prêmio%';
